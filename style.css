@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: 
+    #f4f4f4;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #cccccc;
+    gap: 0.5rem;
+    height: 69%;
+    width: 35%;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form label{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input{
+  padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+input:focus{
+    outline: none; 
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    background-color: #f7f9fc; 
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+
+
+.login{
+    padding:2%;
+    margin:  0 auto;
+    margin-top: 2%;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+}
+
+
+
+/* toggle btn */
+.password-container {
+    display: flex;
+    position: relative;
+  
+}
+
+
+.toggle-btn {
+    cursor: pointer;
+    color: #007BFF;
+    position: absolute;
+    right: 1%;
+    bottom:1%;
+}

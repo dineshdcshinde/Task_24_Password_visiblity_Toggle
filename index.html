@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password visibility Toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="#">
+        <h2>Log in</h2>
+
+        <label for="userName">UserName:</label>
+        <input type="text" id="userName" placeholder="John@123.com" />
+
+        <label for="Password">Password</label>
+        <input type="password" placeholder="password" id="password" />
+        <div class="password-container">
+       
+    
+          <span class="toggle-btn" onclick="togglePassword()">Show</span>
+  
+      </div>
+
+
+
+
+        <button class="login">Log in</button>
+      </form>
+    </div>
+
+    <script>
+         function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleBtn.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.textContent = 'Show';
+            }
+        }
+    </script>
+  </body>
+</html>
